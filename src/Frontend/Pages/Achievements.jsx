@@ -190,7 +190,7 @@ function Achievements() {
                                                     <p className="text-[12.5px] font-medium text-gray-400 dark:text-gray-500 leading-normal tracking-wide mb-2.5 flex items-center">
                                                         {t.achievements.categories[achievement.category]}
                                                         <span className="mx-2">•</span>
-                                                        {t.achievements.types[achievement.type]}
+                                                            {t.achievements.types[achievement.type]}
                                                     </p>
 
                                                     <div className="mt-3.5 pt-2.5 border-t border-gray-100 dark:border-gray-800 flex justify-start">
