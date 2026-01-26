@@ -265,6 +265,8 @@ export const translations = {
         dashboard: {
             title: "Dashboard",
             subtitle: "Visualizing my coding activities, GitHub contributions, and development statistics in real-time.",
+            noDataTitle: "No data available.",
+            noDataSubtitle: "Dashboard content will be available soon.",
         },
         chat: {
             title: "Chat Room",
@@ -575,6 +577,8 @@ export const translations = {
         dashboard: {
             title: "Dasbor",
             subtitle: "Memvisualisasikan aktivitas pemrograman, kontribusi GitHub, dan statistik pengembangan secara real-time.",
+            noDataTitle: "Data tidak tersedia.",
+            noDataSubtitle: "Konten dasbor akan segera tersedia.",
         },
         chat: {
             title: "Ruang Obrolan",

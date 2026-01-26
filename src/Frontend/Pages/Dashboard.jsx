@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "@/Frontend/Components/Header";
 import { useLanguage } from "@/context/LanguageContext";
 import { translations } from "@/data/translations";
+import { FaceFrownIcon } from "@heroicons/react/24/outline";
 
 function Dashboard() {
     const { language } = useLanguage();
@@ -24,6 +25,22 @@ function Dashboard() {
 
                                 <div className="mt-0.5 flex items-center gap-x-4 text-sm/6 font-medium leading-normal tracking-normal text-gray-500 dark:text-gray-400 border-b border-dashed pb-6 border-gray-300 dark:border-gray-800">
                                     <span>{t.dashboard.subtitle}</span>                                
+                                </div>
+                            </div>
+
+                            <div className="mt-6 animate-slideUp" style={{ animationDelay: '0.15s' }}>
+                                <div className="flex flex-col items-center justify-center py-24 bg-transparent border border-dashed border-gray-300 dark:border-gray-800 rounded-3xl animate-in fade-in zoom-in duration-500">
+                                    <div className="bg-gray-100 dark:bg-gray-900 p-4 rounded-full mb-4">
+                                        <FaceFrownIcon className="h-10 w-10 text-gray-400 dark:text-gray-600" />
+                                    </div>
+
+                                    <h3 className="text-[17px] font-bold text-gray-400 dark:text-gray-600 tracking-wide leading-normal mb-1">
+                                        {t.dashboard.noDataTitle}
+                                    </h3>
+
+                                    <p className="text-[14px] tracking-wide text-gray-400 dark:text-gray-500 font-medium leading-normal">
+                                        {t.dashboard.noDataSubtitle}
+                                    </p>
                                 </div>
                             </div>
                         </div>
