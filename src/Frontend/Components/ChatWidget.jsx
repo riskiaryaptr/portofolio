@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useLanguage } from "@/context/LanguageContext";
 import { translations } from "@/data/translations";
@@ -13,6 +13,10 @@ function ChatWidget() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const { language } = useLanguage();
     const t = translations[language];
+
+    useEffect(() => {
+        setIsOpen(false);
+    }, [location.pathname]);
 
     if (location.pathname === "/chat") {
         return null;
