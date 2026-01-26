@@ -264,7 +264,7 @@ export const translations = {
         },
         dashboard: {
             title: "Dashboard",
-            subtitle: "A centralized personal dashboard visualizing my coding activities, GitHub contributions, and development statistics in real-time.",
+            subtitle: "Visualizing my coding activities, GitHub contributions, and development statistics in real-time.",
         },
         chat: {
             title: "Chat Room",
@@ -574,7 +574,7 @@ export const translations = {
         },
         dashboard: {
             title: "Dasbor",
-            subtitle: "Dasbor pribadi terpusat yang memvisualisasikan aktivitas pemrograman saya, kontribusi GitHub, dan statistik pengembangan secara real-time.",
+            subtitle: "Memvisualisasikan aktivitas pemrograman, kontribusi GitHub, dan statistik pengembangan secara real-time.",
         },
         chat: {
             title: "Ruang Obrolan",
