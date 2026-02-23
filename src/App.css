@@ -11,167 +11,167 @@
 @variant dark (&:where(.dark, .dark *));
 
 @layer base {
-  :root {
-    --bg-main: #ffffff;
-    --text-main: #1f2937;
-  }
+    :root {
+        --bg-main: #ffffff;
+        --text-main: #1f2937;
+    }
 
-  .dark {
-    --bg-main: #030712;
-    --text-main: #f9fafb;
-    color-scheme: dark;
-  }
+    .dark {
+        --bg-main: #030712;
+        --text-main: #f9fafb;
+        color-scheme: dark;
+    }
 
-  body {
-    font-family: var(--font-nunito);
-    background-color: var(--bg-main);
-    color: var(--text-main);
-    transition: background-color 300ms, color 300ms;
-  }
+    body {
+        font-family: var(--font-nunito);
+        background-color: var(--bg-main);
+        color: var(--text-main);
+        transition: background-color 300ms, color 300ms;
+    }
 }
 
 @layer utilities {
 
-  #desktop-sidebar {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    scroll-behavior: smooth;
-  }
+    #desktop-sidebar {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        scroll-behavior: smooth;
+    }
 
-  #desktop-sidebar::-webkit-scrollbar {
-    display: none;
-  }
+    #desktop-sidebar::-webkit-scrollbar {
+        display: none;
+    }
 
-  .text-body {
-    font-size: 16.2px;
-  }
+    .text-body {
+        font-size: 16.2px;
+    }
 
-  .text-display {
-    font-size: 35px;
-  }
+    .text-display {
+        font-size: 35px;
+    }
 
-  .chat-container {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-
-  .chat-container::-webkit-scrollbar {
-    display: none;
-  }
-
-  .google-blue {
-    fill: #4285f4;
-  }
-  
-  .google-green {
-    fill: #34a853;
-  }
-
-  .google-yellow {
-    fill: #fbbc05;
-  }
-  
-  .google-red {
-    fill: #ea4335;
-  }
-
-  @media (min-width: 1024px) {
     .chat-container {
-      scrollbar-width: thin;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
     }
 
     .chat-container::-webkit-scrollbar {
-      display: block;
-      width: 5px;
+        display: none;
+    }
+
+    .google-blue {
+        fill: #4285f4;
     }
     
-    .chat-container::-webkit-scrollbar-track {
-      background: transparent;
+    .google-green {
+        fill: #34a853;
+    }
+
+    .google-yellow {
+        fill: #fbbc05;
     }
     
-    .chat-container::-webkit-scrollbar-thumb {
-      background: #e5e7eb;
-      border-radius: 10px;
+    .google-red {
+        fill: #ea4335;
     }
-    
-    .chat-container::-webkit-scrollbar-thumb:hover {
-      background: #d1d5db;
+
+    @media (min-width: 1024px) {
+        .chat-container {
+            scrollbar-width: thin;
+        }
+
+        .chat-container::-webkit-scrollbar {
+            display: block;
+            width: 5px;
+        }
+        
+        .chat-container::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        
+        .chat-container::-webkit-scrollbar-thumb {
+            background: #e5e7eb;
+            border-radius: 10px;
+        }
+        
+        .chat-container::-webkit-scrollbar-thumb:hover {
+            background: #d1d5db;
+        }
     }
-  }
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
-    to {
-      opacity: 1;
+
+    @keyframes zoomIn {
+        from {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
     }
-  }
 
-  @keyframes zoomIn {
-    from {
-      opacity: 0;
-      transform: scale(0.95);
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
-    to {
-      opacity: 1;
-      transform: scale(1);
+
+    .animate-in {
+        animation-duration: 300ms;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        animation-fill-mode: forwards;
     }
-  }
 
-  @keyframes slideUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
+    .fade-in {
+        animation-name: fadeIn;
     }
-    to {
-      opacity: 1;
-      transform: translateY(0);
+
+    .zoom-in-95 {
+        animation-name: zoomIn;
     }
-  }
 
-  .animate-in {
-    animation-duration: 300ms;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    animation-fill-mode: forwards;
-  }
+    .animate-slideUp {
+        opacity: 0;
+        animation-name: slideUp;
+        animation-duration: 0.8s;
+        animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        animation-fill-mode: forwards;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
 
-  .fade-in {
-    animation-name: fadeIn;
-  }
+    .gradient-gmail {
+        background-image: linear-gradient(to bottom right, #EA4335, #C5221F);
+    }
 
-  .zoom-in-95 {
-    animation-name: zoomIn;
-  }
+    .gradient-instagram {
+        background-image: linear-gradient(to bottom right, #6B2FA3, #D94F35, #E09F38);
+    }
 
-  .animate-slideUp {
-    opacity: 0;
-    animation-name: slideUp;
-    animation-duration: 0.8s;
-    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    animation-fill-mode: forwards;
-  }
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+    .gradient-linkedin {
+        background-image: linear-gradient(to bottom right, #0077B5, #00A0DC);
+    }
 
-  .gradient-gmail {
-    background-image: linear-gradient(to bottom right, #EA4335, #C5221F);
-  }
-
-  .gradient-instagram {
-    background-image: linear-gradient(to bottom right, #6B2FA3, #D94F35, #E09F38);
-  }
-
-  .gradient-linkedin {
-    background-image: linear-gradient(to bottom right, #0077B5, #00A0DC);
-  }
-
-  .gradient-github {
-    background-image: linear-gradient(to bottom right, #151c27, #161f31);
-  }
+    .gradient-github {
+        background-image: linear-gradient(to bottom right, #151c27, #161f31);
+    }
 }
