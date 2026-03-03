@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { HomeIcon, UsersIcon, TrophyIcon, FolderPlusIcon, SquaresPlusIcon, ChatBubbleLeftRightIcon, EnvelopeOpenIcon, SunIcon, MoonIcon,} from "@heroicons/react/24/outline";
+import { HomeIcon, UsersIcon, TrophyIcon, FolderPlusIcon, SquaresPlusIcon, ChatBubbleLeftRightIcon, EnvelopeOpenIcon, SunIcon, MoonIcon, } from "@heroicons/react/24/outline";
 import profilePic from "@/assets/Profile/Profile-1.jpg";
 import { useLanguage } from "@/context/LanguageContext";
 import { translations } from "@/data/translations";
@@ -29,12 +29,12 @@ function Header() {
 
     useEffect(() => {
         if (typeof window === "undefined") return;
-        
+
         const root = window.document.documentElement;
         const body = document.body;
-        
+
         if (!root || !body) return;
-        
+
         if (theme === "dark") {
             root.classList.add("dark");
             body.classList.add("dark");
@@ -54,16 +54,16 @@ function Header() {
 
     const closeMenu = () => {
         setIsAnimated(false);
-        setTimeout(() => setMobileMenuOpen(false), 500);    
+        setTimeout(() => setMobileMenuOpen(false), 500);
     };
 
     return (
-        
+
         <div className="lg:sticky lg:top-0 lg:w-63 lg:shrink-0 lg:self-start">
             <header className="lg:hidden fixed inset-x-0 top-0 z-50 bg-white dark:bg-gray-900 shadow-sm border-b border-gray-200 dark:border-gray-800">
                 <nav aria-label="Global" className="flex items-center justify-between p-5">
                     <NavLink to="/" className="-m-1.5 p-1 flex items-center gap-x-3">
-                        <img src={profilePic} alt="Riski Arya Putra" className="h-8 w-auto rounded-full"/>
+                        <img src={profilePic} alt="Riski Arya Putra" className="h-8 w-auto rounded-full" />
                         <h2 className="font-bold text-[15px] text-gray-800 dark:text-white flex items-center gap-x-1.5">
                             <span>Riski Arya Putra</span>
                             <div className="relative inline-block">
@@ -80,7 +80,7 @@ function Header() {
                     <button type="button" onClick={() => setMobileMenuOpen(true)} className="-m-3 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-300">
                         <span className="sr-only">Open main menu</span>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="size-6">
-                            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" strokeLinecap="round" strokeLinejoin="round"/>
+                            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                     </button>
                 </nav>
@@ -91,9 +91,9 @@ function Header() {
                     <div className="h-24 w-24 rounded-full bg-gray-100 dark:bg-gray-800 overflow-hidden mb-3">
                         <img src={profilePic} alt="Avatar" className="w-full h-full object-cover" />
                     </div>
-                    
+
                     <h2 className="font-bold text-base text-gray-800 dark:text-white flex items-center gap-x-2">
-                        <span>Riski Arya Putra</span>   
+                        <span>Riski Arya Putra</span>
                         <div className="relative inline-block">
                             <div className="tooltip-container relative">
                                 <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" className="text-blue-400" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
@@ -103,7 +103,7 @@ function Header() {
                             </div>
                         </div>
                     </h2>
-                    
+
                     <p className="text-[13px] font-medium leading-normal text-gray-500 dark:text-gray-400 mb-4">@riskiaryaputra</p>
 
                     <div className="flex w-full items-center gap-x-1.5">
@@ -123,13 +123,13 @@ function Header() {
                         </div>
                     </div>
                 </div>
-        
+
                 <div className="flex flex-col gap-y-1.5 border-b border-gray-300 dark:border-gray-800 pb-3">
                     {navigationItems.map((item) => (
-                        <NavLink key={item.key} to={item.href} className={({ isActive }) => `flex items-center gap-x-3 px-3 py-2.5 text-[15.1px] font-semibold leading-normal rounded-lg transition-colors ${ isActive ? "bg-gray-50 dark:bg-gray-800/50 text-gray-700 dark:text-gray-100" : "text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800/50"}`}>
+                        <NavLink key={item.key} to={item.href} className={({ isActive }) => `flex items-center gap-x-3 px-3 py-2.5 text-[15.1px] font-semibold leading-normal rounded-lg transition-colors ${isActive ? "bg-gray-50 dark:bg-gray-800/50 text-gray-700 dark:text-gray-100" : "text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800/50"}`}>
                             <item.icon className="h-[18px] w-[18px] shrink-0" aria-hidden="true" />{t.nav[item.key]}
                         </NavLink>
-                    ))} 
+                    ))}
                 </div>
 
                 <div className="mt-3 text-[14px] font-medium leading-normal text-gray-500 dark:text-gray-400 text-center">
@@ -140,11 +140,11 @@ function Header() {
             {mobileMenuOpen && (
                 <div id="mobile-menu" className="relative z-50 lg:hidden" >
                     <div className={`fixed inset-0 bg-gray-900/50 transition-opacity duration-700 ease-in-out ${isAnimated ? "opacity-100" : "opacity-0"}`} onClick={closeMenu} />
-                    
+
                     <div className={`fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:bg-gray-900 p-5 transform transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] ${isAnimated ? "translate-x-0" : "translate-x-full"}`}>
                         <div className="flex items-center justify-between">
                             <div className="flex items-center gap-x-3">
-                                <img src={profilePic} alt="Riski Arya Putra" className="h-8 w-auto rounded-full"/>
+                                <img src={profilePic} alt="Riski Arya Putra" className="h-8 w-auto rounded-full" />
                                 <h2 className="font-bold text-[15px] text-gray-600 dark:text-gray-200 flex items-center gap-x-1.5">
                                     <span>Riski Arya Putra</span>
                                     <div className="relative inline-block">
@@ -157,11 +157,11 @@ function Header() {
                                     </div>
                                 </h2>
                             </div>
-                            
+
                             <button type="button" onClick={closeMenu} className="-m-3 rounded-md p-2.5 text-gray-700 dark:text-gray-300">
                                 <span className="sr-only">{t.nav.closeMenu}</span>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="size-6">
-                                    <path d="M6 18 18 6M6 6l12 12" strokeLinecap="round" strokeLinejoin="round"/>
+                                    <path d="M6 18 18 6M6 6l12 12" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </button>
                         </div>
@@ -184,9 +184,9 @@ function Header() {
                         </div>
 
                         <div className="mt-4 flow-root">
-                            <div className="py-3 space-y-3 border-b border-gray-300 dark:border-gray-800 pb-4">   
+                            <div className="py-3 space-y-3 border-b border-gray-300 dark:border-gray-800 pb-4">
                                 {navigationItems.map((item) => (
-                                    <NavLink key={item.key} to={item.href} onClick={closeMenu} className={({ isActive }) => `-mx-3 flex items-center gap-x-3.5 rounded-lg px-3 py-2.5 text-[15px] font-semibold leading-normal transition-colors ${ isActive ? "bg-gray-50 dark:bg-gray-800/50 text-gray-700 dark:text-gray-100" : "text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800/50"}`}>
+                                    <NavLink key={item.key} to={item.href} onClick={closeMenu} className={({ isActive }) => `-mx-3 flex items-center gap-x-3.5 rounded-lg px-3 py-2.5 text-[15px] font-semibold leading-normal transition-colors ${isActive ? "bg-gray-50 dark:bg-gray-800/50 text-gray-700 dark:text-gray-100" : "text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800/50"}`}>
                                         <item.icon className="h-[18px] w-[18px] shrink-0 text-gray-400 dark:text-gray-500" aria-hidden="true" />
                                         {t.nav[item.key]}
                                     </NavLink>
