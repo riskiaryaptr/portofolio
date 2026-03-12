@@ -114,8 +114,8 @@ function About() {
                                                             <h4 className="text-[14px] font-semibold text-gray-700 dark:text-gray-200 mb-2.5">{t.about.keyResponsibilities}</h4>
                                                             <ul className="space-y-2">
                                                                 {exp.responsibilities.map((resp, idx) => (
-                                                                    <li key={idx} className="flex items-start gap-x-2 text-[14px] text-gray-600 dark:text-gray-400 leading-normal">
-                                                                        <span className="text-blue-500 dark:text-gray-400 mt-1">•</span>
+                                                                    <li key={idx} className="flex items-baseline gap-x-2 text-[14px] text-gray-600 dark:text-gray-400 leading-normal">
+                                                                        <span className="text-blue-500 dark:text-gray-400 shrink-0">•</span>
                                                                         <span>{resp}</span>
                                                                     </li>
                                                                 ))}
@@ -174,8 +174,8 @@ function About() {
                                                             <h4 className="text-[14px] font-semibold text-gray-700 dark:text-gray-200 mb-2.5">{t.about.activitiesAchievements}</h4>
                                                             <ul className="space-y-2">
                                                                 {edu.responsibilities.map((resp, idx) => (
-                                                                    <li key={idx} className="flex items-start gap-x-2 text-[14px] text-gray-600 dark:text-gray-400 leading-normal">
-                                                                        <span className="text-blue-500 dark:text-gray-400 mt-1">•</span>
+                                                                    <li key={idx} className="flex items-baseline gap-x-2 text-[14px] text-gray-600 dark:text-gray-400 leading-normal">
+                                                                        <span className="text-blue-500 dark:text-gray-400 shrink-0">•</span>
                                                                         <span>{resp}</span>
                                                                     </li>
                                                                 ))}
