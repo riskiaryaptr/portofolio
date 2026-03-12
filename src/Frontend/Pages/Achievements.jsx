@@ -121,7 +121,7 @@ function Achievements() {
                                                 <input type="text" placeholder={t.achievements.searchCategoryPlaceholder} value={categorySearch} onChange={(e) => setCategorySearch(e.target.value)} className="w-full pl-9 pr-3 py-2 text-sm text-gray-600 dark:text-gray-300 placeholder-gray-400 placeholder:font-normal placeholder:tracking-wide placeholder:text-[14px] bg-transparent focus:outline-none rounded-md"/>
                                             </div>
 
-                                            <div className="py-1 max-h-54 overflow-y-auto no-scrollbar">
+                                            <div className="py-1 max-h-54 overflow-y-auto [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-gray-200 dark:[&::-webkit-scrollbar-thumb]:bg-gray-700 [&::-webkit-scrollbar-thumb]:rounded-full">
                                                 {filteredCategories.map((catKey) => (
                                                     <button key={catKey} onClick={() => handleCategorySelect(catKey)} className="w-full text-left px-6 py-2.5 text-sm/6 leading-normal tracking-wide font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors flex items-center justify-between group">
                                                         <span className={selectedCategory === catKey ? "text-blue-600 dark:text-blue-400" : ""}>{t.achievements.categories[catKey]}</span>
@@ -150,7 +150,7 @@ function Achievements() {
                                                 <input type="text" placeholder={t.achievements.searchTypePlaceholder} value={achievementSearch} onChange={(e) => setAchievementSearch(e.target.value)} className="w-full pl-9 pr-3 py-2 text-sm text-gray-600 dark:text-gray-300 placeholder-gray-400 placeholder:font-normal placeholder:tracking-wide placeholder:text-[14px] bg-transparent focus:outline-none rounded-md"/>
                                             </div>
 
-                                            <div className="py-1 max-h-54 overflow-y-auto no-scrollbar">
+                                            <div className="py-1 max-h-54 overflow-y-auto [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-gray-200 dark:[&::-webkit-scrollbar-thumb]:bg-gray-700 [&::-webkit-scrollbar-thumb]:rounded-full">
                                                 {filteredFilterOptions.map((optKey) => (
                                                     <button key={optKey} onClick={() => handleFilterSelect(optKey)} className="w-full text-left px-6 py-2.5 text-sm/6 leading-normal tracking-wide font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors flex items-center justify-between group">
                                                         <span className={selectedFilter === optKey ? "text-blue-600 dark:text-blue-400" : ""}>{t.achievements.types[optKey]}</span>
