@@ -5,7 +5,6 @@ export const translations = {
             about: "About",
             achievements: "Achievements",
             projects: "Projects",
-            dashboard: "Dashboard",
             chat: "Chat Room",
             contact: "Contact",
             closeMenu: "Close menu",
@@ -24,9 +23,9 @@ export const translations = {
         about: {
             title: "About Me",
             subtitle: "A brief introduction to who I am.",
-            bio1: "Hello there! Thank you for visiting my personal website. I'm Riski Arya Putra, a student at Universitas Muhammadiyah Semarang, originally from Demak. I'm a Frontend Developer with a passion for building impactful software products. My expertise focuses on modern technologies like React, JavaScript, Tailwind CSS, Bootstrap, and Laravel.",
+            bio1: "Hello there! Thank you for visiting my personal website. I'm Riski Arya Putra, a student of Universitas Muhammadiyah Semarang, originally from Demak. I'm a Frontend Developer with a passion for building impactful web products. My expertise focuses on modern technologies like React, JavaScript, Tailwind CSS, Bootstrap, and Laravel.",
             bio2: "I enjoy creating solutions that are both user-friendly and performant. Whether it's building intuitive interfaces or architecting frontend logic, I aim to bring efficiency and clarity into every layer of the application. I'm a fast learner who thrives in dynamic environments, and I enjoy solving complex problems collaboratively.",
-            bio3: "I believe that great communication and team synergy are key to success in software development. My experience has shaped my technical and analytical skills, as well as my dedication to quality. I'm always excited to work in teams, learn from others, and contribute to impactful projects.",
+            bio3: "I believe that great communication and team synergy are key to success in web development. My experience has shaped my technical and analytical skills, as well as my dedication to quality. I'm always excited to work in teams, learn from others, and contribute to impactful projects. I also want to keep learning and stay curious, even when things get challenging.",
             bestRegards: "Best regards,",
             downloadResume: "Download Resume",
             downloadPortfolio: "Download Portfolio",
@@ -262,12 +261,6 @@ export const translations = {
                 }
             ]
         },
-        dashboard: {
-            title: "Dashboard",
-            subtitle: "Visualizing my coding activities, GitHub contributions, and development statistics in real-time.",
-            noDataTitle: "No data available.",
-            noDataSubtitle: "Dashboard content will be available soon.",
-        },
         chat: {
             title: "Chat Room",
             conversation: "Messages",
@@ -317,7 +310,6 @@ export const translations = {
             about: "Tentang",
             achievements: "Pencapaian",
             projects: "Proyek",
-            dashboard: "Dasbor",
             chat: "Ruang Obrolan",
             contact: "Kontak",
             closeMenu: "Tutup menu",
@@ -336,9 +328,9 @@ export const translations = {
         about: {
             title: "Tentang Saya",
             subtitle: "Pengenalan singkat mengenai siapa saya.",
-            bio1: "Halo! Terima kasih telah mengunjungi situs pribadi saya. Saya Riski Arya Putra, seorang mahasiswa di Universitas Muhammadiyah Semarang, asli dari Demak. Saya seorang Pengembang Frontend dengan semangat untuk membangun produk perangkat lunak yang berdampak. Keahlian saya berfokus pada teknologi modern seperti React, JavaScript, Tailwind CSS, Bootstrap, dan Laravel.",
+            bio1: "Halo! Terima kasih telah mengunjungi situs pribadi saya. Saya Riski Arya Putra, seorang mahasiswa Universitas Muhammadiyah Semarang, asli dari Demak. Saya seorang Frontend Developer dengan semangat untuk membangun produk web yang berdampak. Keahlian saya berfokus pada teknologi modern seperti React, JavaScript, Tailwind CSS, Bootstrap, dan Laravel.",
             bio2: "Saya senang menciptakan solusi yang ramah pengguna dan berkinerja tinggi. Baik itu membangun antarmuka yang intuitif atau merancang logika frontend, saya bertujuan untuk membawa efisiensi dan kejelasan ke dalam setiap lapisan aplikasi. Saya adalah pembelajar yang cepat yang berkembang di lingkungan yang dinamis, dan saya senang memecahkan masalah kompleks secara kolaboratif.",
-            bio3: "Saya percaya bahwa komunikasi dan sinergi tim yang baik adalah kunci sukses dalam pengembangan perangkat lunak. Pengalaman saya telah membentuk keterampilan teknis dan analitis saya, serta dedikasi saya terhadap kualitas. Saya selalu bersemangat untuk bekerja dalam tim, belajar dari orang lain, dan berkontribusi pada proyek-proyek yang berdampak.",
+            bio3: "Saya percaya bahwa komunikasi dan sinergi tim yang baik adalah kunci sukses dalam pengembangan web. Pengalaman saya telah membentuk keterampilan teknis dan analitis saya, serta dedikasi saya terhadap kualitas. Saya selalu bersemangat untuk bekerja dalam tim, belajar dari orang lain, dan berkontribusi pada proyek-proyek yang berdampak. Saya juga selalu ingin terus belajar dan tetap penasaran, bahkan ketika menghadapi kesulitan sekalipun.",
             bestRegards: "Salam hormat,",
             downloadResume: "Unduh Resume",
             downloadPortfolio: "Unduh Portofolio",
@@ -573,12 +565,6 @@ export const translations = {
                     date: "Des 2025"
                 }
             ]
-        },
-        dashboard: {
-            title: "Dasbor",
-            subtitle: "Memvisualisasikan aktivitas pemrograman, kontribusi GitHub, dan statistik pengembangan secara real-time.",
-            noDataTitle: "Data tidak tersedia.",
-            noDataSubtitle: "Konten dasbor akan segera tersedia.",
         },
         chat: {
             title: "Ruang Obrolan",

@@ -6,7 +6,6 @@ import Chat from "@/Frontend/Pages/Chat";
 import Contact from "@/Frontend/Pages/Contact";
 import Achievements from "@/Frontend/Pages/Achievements";
 import Projects from "@/Frontend/Pages/Projects";
-import Dashboard from "@/Frontend/Pages/Dashboard";
 import ChatWidget from "@/Frontend/Components/ChatWidget";
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/achievements" element={<Achievements />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
         <ChatWidget />
       </Router>

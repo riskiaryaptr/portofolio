@@ -10,7 +10,6 @@ const navigationItems = [
     { key: "about", href: "/about", icon: UsersIcon },
     { key: "achievements", href: "/achievements", icon: TrophyIcon },
     { key: "projects", href: "/projects", icon: FolderPlusIcon },
-    { key: "dashboard", href: "/dashboard", icon: SquaresPlusIcon },
     { key: "chat", href: "/chat", icon: ChatBubbleLeftRightIcon },
     { key: "contact", href: "/contact", icon: EnvelopeOpenIcon },
 ];
