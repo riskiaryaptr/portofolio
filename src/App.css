@@ -3,9 +3,9 @@
 @import "tailwindcss";
 
 @theme {
-  --font-nunito: "Nunito", sans-serif;
-  --font-pretty: "Poppins", sans-serif;
-  --font-signature: "Dancing Script", sans-serif;
+    --font-nunito: "Nunito", sans-serif;
+    --font-pretty: "Poppins", sans-serif;
+    --font-signature: "Dancing Script", sans-serif;
 }
 
 @variant dark (&:where(.dark, .dark *));
