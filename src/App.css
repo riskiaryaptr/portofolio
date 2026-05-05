@@ -11,23 +11,23 @@
 @variant dark (&:where(.dark, .dark *));
 
 @layer base {
-  :root {
-    --bg-main: #ffffff;
-    --text-main: #1f2937;
-  }
+    :root {
+        --bg-main: #ffffff;
+        --text-main: #1f2937;
+    }
 
-  .dark {
-    --bg-main: #030712;
-    --text-main: #f9fafb;
-    color-scheme: dark;
-  }
+    .dark {
+        --bg-main: #030712;
+        --text-main: #f9fafb;
+        color-scheme: dark;
+    }
 
-  body {
-    font-family: var(--font-nunito);
-    background-color: var(--bg-main);
-    color: var(--text-main);
-    transition: background-color 300ms, color 300ms;
-  }
+    body {
+        font-family: var(--font-nunito);
+        background-color: var(--bg-main);
+        color: var(--text-main);
+        transition: background-color 300ms, color 300ms;
+    }
 }
 
 @layer utilities {
@@ -151,9 +151,11 @@
         animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
         animation-fill-mode: forwards;
     }
+    
     .no-scrollbar::-webkit-scrollbar {
         display: none;
     }
+
     .no-scrollbar {
         -ms-overflow-style: none;
         scrollbar-width: none;
