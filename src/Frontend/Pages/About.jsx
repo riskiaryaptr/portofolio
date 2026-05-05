@@ -129,7 +129,7 @@ function About() {
                                 </div>
                             </div>
 
-                            <div className="mt-6 animate-slideUp" style={{ animationDelay: '0.35s' }}>
+                            <div className="mt-6 border-b border-gray-200 dark:border-gray-800 pb-8 animate-slideUp" style={{ animationDelay: '0.25s' }}>
                                 <div className="flex items-center gap-x-2">
                                     <AcademicCapIcon className="h-5 w-5 text-gray-800 dark:text-gray-200" />
                                     <h2 className="text-[20px] font-semibold leading-normal tracking-tight text-gray-700 dark:text-gray-100">{t.about.educationTitle}</h2>
@@ -188,6 +188,7 @@ function About() {
                                     ))}
                                 </div>
                             </div>
+
                         </div>
                     </main>
                 </div>

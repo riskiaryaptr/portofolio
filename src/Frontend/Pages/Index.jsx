@@ -7,8 +7,7 @@ function Index() {
     const { language } = useLanguage();
     const t = translations[language];
 
-    return (
-        
+    return (        
         <div className="dark:bg-gray-950 min-h-screen transition-all duration-300">
             <div className="mx-auto max-w-6xl px-4 sm:px-5 lg:px-2">
                 <div className="flex flex-col lg:flex-row gap-x-3 items-start">

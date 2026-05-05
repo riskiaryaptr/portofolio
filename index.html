@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>profile-dev</title>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const theme = localStorage.getItem("theme") || "light";
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>profile-dev</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const theme = localStorage.getItem("theme") || "light";
 
-        if (theme === "dark") {
-          document.documentElement.classList.add("dark");
-          document.body.classList.add("dark");
-        } else {
-          document.documentElement.classList.remove("dark");
-          document.body.classList.remove("dark");
-        }
-      });
-    </script>
+                if (theme === "dark") {
+                    document.documentElement.classList.add("dark");
+                    document.body.classList.add("dark");
+                } else {
+                    document.documentElement.classList.remove("dark");
+                    document.body.classList.remove("dark");
+                }
+            });
+        </script>
 
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+    </body>
 </html>
