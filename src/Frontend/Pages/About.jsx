@@ -72,7 +72,8 @@ function About() {
                                     <p className="font-signature font-bold tracking-normal text-[35px] leading-none text-blue-500 dark:text-gray-300">Riski Arya</p>
                                 </div>
                             </div>
-
+                            
+                            {/* Experience */}
                             <div className="mt-6 border-b border-gray-200 dark:border-gray-800 pb-8 animate-slideUp" style={{ animationDelay: '0.25s' }}>
                                 <div className="flex items-center gap-x-2">
                                     <SparklesIcon className="h-5 w-5 text-gray-800 dark:text-gray-200" />
@@ -134,7 +135,8 @@ function About() {
                                     ))}
                                 </div>
                             </div>
-
+                                
+                            {/* Education */}
                             <div className="mt-6 border-b border-gray-200 dark:border-gray-800 pb-8 animate-slideUp" style={{ animationDelay: '0.25s' }}>
                                 <div className="flex items-center gap-x-2">
                                     <AcademicCapIcon className="h-5 w-5 text-gray-800 dark:text-gray-200" />
@@ -194,8 +196,9 @@ function About() {
                                     ))}
                                 </div>
                             </div>
-
-                            <div className="mt-6 pb-8 animate-slideUp" style={{ animationDelay: '0.35s' }}>
+                            
+                            {/* Organization */}
+                            <div className="mt-6 animate-slideUp" style={{ animationDelay: '0.35s' }}>
                                 <div className="flex items-center gap-x-2">
                                     <BuildingOffice2Icon className="h-5 w-5 text-gray-800 dark:text-gray-200" />
                                     <h2 className="text-[20px] font-semibold leading-normal tracking-tight text-gray-700 dark:text-gray-100">{t.about.organizationTitle}</h2>
@@ -254,7 +257,6 @@ function About() {
                                     ))}
                                 </div>
                             </div>
-
                         </div>
                     </main>
                 </div>

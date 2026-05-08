@@ -88,6 +88,7 @@ function Achievements() {
             <div className="mx-auto max-w-6xl px-4 sm:px-5 lg:px-2">
                 <div className="flex flex-col lg:flex-row gap-x-3 items-start">
                     <Header />
+                    
                     <main className="flex-1 py-28 lg:py-12">
                         <div className="w-full">
                             <div className="animate-slideUp" style={{ animationDelay: '0.05s' }}>

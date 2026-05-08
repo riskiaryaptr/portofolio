@@ -167,10 +167,10 @@ function ChatWidget() {
 
             <button onClick={() => setIsOpen(!isOpen)} className={`w-12 h-12 rounded-full flex items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-300 transform active:scale-95 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700`}>
                 {isOpen ? (
-                    <ArrowsPointingInIcon className="w-6 h-6 text-gray-500 dark:text-gray-400" />
+                    <ArrowsPointingInIcon className="w-6 h-6 text-gray-500 dark:text-gray-400"/>
                 ) : (
                     <div className="relative group">
-                        <ChatBubbleLeftRightIcon className="w-6 h-6 text-gray-600 dark:text-gray-300 stroke-[1.3]" />
+                        <ChatBubbleLeftRightIcon className="w-6 h-6 text-gray-600 dark:text-gray-300 stroke-[1.3]"/>
                         <span className="absolute -top-0 -right-0.5 w-2.5 h-2.5 bg-blue-500 rounded-full border-2 border-white dark:border-gray-800"></span>
                     </div>
                 )}
