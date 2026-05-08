@@ -222,7 +222,7 @@ function About() {
                                                         <span className="text-gray-500 dark:text-gray-600">{org.location}</span>
                                                     </div>
 
-                                                    <div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] sm:text-[13px] text-gray-400 dark:text-gray-500 font-medium leading-normal">
+                                                     <div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] sm:text-[13px] text-gray-400 dark:text-gray-500 font-medium leading-normal">
                                                         <span>{org.period}</span>
                                                         <span className="text-gray-300 dark:text-gray-700">•</span>
                                                         <span>{org.duration}</span>
@@ -232,12 +232,12 @@ function About() {
 
                                                     <button onClick={() => toggleAccordion(`org-${index}`)} className="mt-3.5 flex items-center gap-x-1 text-[13px] sm:text-[13.5px] font-semibold leading-normal tracking-normal text-gray-500 dark:text-gray-400">
                                                         <ChevronRightIcon className={`h-3.5 w-3.5 transition-transform duration-200 ${expandedItem === `org-${index}` ? 'rotate-90' : ''}`} />
-                                                        {expandedItem === `org-${index}` ? t.about.hideActivities : t.about.showActivities}
+                                                        {expandedItem === `org-${index}` ? t.about.hideResponsibilities : t.about.showResponsibilities}
                                                     </button>
 
                                                     {expandedItem === `org-${index}` && (
                                                         <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-800">
-                                                            <h4 className="text-[14px] font-semibold text-gray-700 dark:text-gray-200 mb-2.5">{t.about.organizationActivities}</h4>
+                                                            <h4 className="text-[14px] font-semibold text-gray-700 dark:text-gray-200 mb-2.5">{t.about.activitiesAchievements}</h4>
                                                             <ul className="space-y-2">
                                                                 {org.activities.map((act, idx) => (
                                                                     <li key={idx} className="flex items-baseline gap-x-2 text-[14px] text-gray-600 dark:text-gray-400 leading-normal">

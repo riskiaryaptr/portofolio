@@ -90,7 +90,7 @@ function Contact() {
 
                                 <textarea placeholder={t.contact.formMessage} className="w-full px-4 py-3 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg text-[14px] outline-none text-gray-700 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 dark:focus:ring-1 dark:focus:ring-gray-700 focus:border-transparent transition-all h-32 resize-none placeholder:text-gray-400"/>
 
-                                <button type="button" className="w-full py-3 bg-blue-500 dark:bg-gray-900 text-white dark:text-gray-200 border border-transparent dark:border-gray-800 rounded-lg font-bold text-[14px] shadow-sm transition-all">
+                                <button type="button" className="w-full py-3 bg-blue-500 dark:bg-gray-900 text-white dark:text-gray-200 border border-transparent dark:border-gray-800 rounded-lg font-bold text-[14px] shadow-sm transition-all outline-none dark:focus:ring-1 dark:focus:ring-gray-700">
                                     {t.contact.formButton}
                                 </button>
                             </form>

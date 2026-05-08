@@ -118,17 +118,17 @@ export const translations = {
             ],
             organizations: [
                 {
-                    name: "Informatics Study Club (ISC)",
-                    role: "Web Division Member",
-                    location: "Semarang, Central Java, Indonesia 🇮🇩",
-                    period: "Mar 2023 - Present",
-                    duration: "2+ years",
-                    type: "Student Organization",
+                    name: "Himpunan Mahasiswa Informatika (Himafor)",
+                    role: "Puskominfo Division",
+                    location: "Universitas Muhammadiyah Semarang, Indonesia 🇮🇩",
+                    period: "2022 - 2024",
+                    duration: "1 month",
+                    type: "Full-time",
                     activities: [
-                        "Developed and maintained the official club website",
-                        "Organized and participated in tech workshops and seminars",
-                        "Collaborated with members on various web development projects",
-                        "Contributed to the growth of the programming community on campus"
+                        "Managed and handled informatics and communication division tasks",
+                        "Participated in organizational events and activities within the faculty",
+                        "Contributed to the design and distribution of organizational content and media",
+                        "Collaborated with fellow members on department-level student programs"
                     ]
                 }
             ]
@@ -444,17 +444,17 @@ export const translations = {
             ],
             organizations: [
                 {
-                    name: "Informatics Study Club (ISC)",
-                    role: "Anggota Divisi Web",
-                    location: "Semarang, Jawa Tengah, Indonesia 🇮🇩",
-                    period: "Mar 2023 - Sekarang",
-                    duration: "2+ tahun",
-                    type: "Organisasi Mahasiswa",
+                    name: "Himpunan Mahasiswa Informatika (Himafor)",
+                    role: "Divisi Puskominfo",
+                    location: "Universitas Muhammadiyah Semarang, Indonesia 🇮🇩",
+                    period: "2022 - 2024",
+                    duration: "1 bulan",
+                    type: "Penuh Waktu",
                     activities: [
-                        "Mengembangkan dan memelihara situs web resmi klub",
-                        "Menyelenggarakan dan berpartisipasi dalam workshop dan seminar teknologi",
-                        "Berkolaborasi dengan anggota dalam berbagai proyek pengembangan web",
-                        "Berkontribusi pada pertumbuhan komunitas pemrograman di kampus"
+                        "Mengelola dan menangani tugas-tugas divisi informasi dan komunikasi",
+                        "Berpartisipasi dalam kegiatan dan acara organisasi di tingkat fakultas",
+                        "Berkontribusi dalam perancangan dan penyebaran konten serta media organisasi",
+                        "Berkolaborasi dengan sesama anggota dalam program mahasiswa tingkat jurusan"
                     ]
                 }
             ]
