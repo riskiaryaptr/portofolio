@@ -33,10 +33,15 @@ export const translations = {
             experienceSubtitle: "My professional journey.",
             educationTitle: "Education",
             educationSubtitle: "My academic background and qualifications.",
+            organizationTitle: "Organizations",
+            organizationSubtitle: "Communities and student organizations I have been part of.",
+            showActivities: "Show Activities",
+            hideActivities: "Hide Activities",
             showResponsibilities: "Show Responsibilities",
             hideResponsibilities: "Hide Responsibilities",
             keyResponsibilities: "Key Responsibilities:",
             activitiesAchievements: "Activities and Achievements:",
+            organizationActivities: "Activities & Contributions:",
             experiences: [
                 {
                     title: "Frontend Web Developer",
@@ -108,6 +113,22 @@ export const translations = {
                         "Excellence in Science and Mathematics",
                         "Active member of Student Council (OSIS)",
                         "Participated in various school competitions"
+                    ]
+                }
+            ],
+            organizations: [
+                {
+                    name: "Informatics Study Club (ISC)",
+                    role: "Web Division Member",
+                    location: "Semarang, Central Java, Indonesia 🇮🇩",
+                    period: "Mar 2023 - Present",
+                    duration: "2+ years",
+                    type: "Student Organization",
+                    activities: [
+                        "Developed and maintained the official club website",
+                        "Organized and participated in tech workshops and seminars",
+                        "Collaborated with members on various web development projects",
+                        "Contributed to the growth of the programming community on campus"
                     ]
                 }
             ]
@@ -338,10 +359,15 @@ export const translations = {
             experienceSubtitle: "Perjalanan profesional saya.",
             educationTitle: "Pendidikan",
             educationSubtitle: "Latar belakang akademik dan kualifikasi saya.",
+            organizationTitle: "Organisasi",
+            organizationSubtitle: "Komunitas dan organisasi mahasiswa yang pernah saya ikuti.",
+            showActivities: "Tampilkan Kegiatan",
+            hideActivities: "Sembunyikan Kegiatan",
             showResponsibilities: "Tampilkan Tanggung Jawab",
             hideResponsibilities: "Sembunyikan Tanggung Jawab",
             keyResponsibilities: "Tanggung Jawab Utama:",
             activitiesAchievements: "Kegiatan dan Pencapaian:",
+            organizationActivities: "Kegiatan & Kontribusi:",
             experiences: [
                 {
                     title: "Pengembang Web Frontend",
@@ -413,6 +439,22 @@ export const translations = {
                         "Unggul dalam mata pelajaran IPA dan Matematika",
                         "Anggota aktif Organisasi Siswa Intra Sekolah (OSIS)",
                         "Berpartisipasi dalam berbagai kompetisi sekolah"
+                    ]
+                }
+            ],
+            organizations: [
+                {
+                    name: "Informatics Study Club (ISC)",
+                    role: "Anggota Divisi Web",
+                    location: "Semarang, Jawa Tengah, Indonesia 🇮🇩",
+                    period: "Mar 2023 - Sekarang",
+                    duration: "2+ tahun",
+                    type: "Organisasi Mahasiswa",
+                    activities: [
+                        "Mengembangkan dan memelihara situs web resmi klub",
+                        "Menyelenggarakan dan berpartisipasi dalam workshop dan seminar teknologi",
+                        "Berkolaborasi dengan anggota dalam berbagai proyek pengembangan web",
+                        "Berkontribusi pada pertumbuhan komunitas pemrograman di kampus"
                     ]
                 }
             ]
