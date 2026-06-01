@@ -186,12 +186,11 @@ function Header() {
                             <div className="py-3 space-y-3 border-b border-gray-300 dark:border-gray-800 pb-4">
                                 {navigationItems.map((item) => (
                                     <NavLink key={item.key} to={item.href} onClick={closeMenu} className={({ isActive }) => `-mx-3 flex items-center gap-x-3.5 rounded-lg px-3 py-2.5 text-[15px] font-semibold leading-normal transition-colors ${isActive ? "bg-gray-50 dark:bg-gray-800/50 text-gray-700 dark:text-gray-100" : "text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800/50"}`}>
-                                        <item.icon className="h-[18px] w-[18px] shrink-0 text-gray-400 dark:text-gray-500" aria-hidden="true" />
+                                        <item.icon className="h-[18px] w-[18px] shrink-0 text-gray-400 dark:text-gray-500" aria-hidden="true"/>
                                         {t.nav[item.key]}
                                     </NavLink>
                                 ))}
                             </div>
-
 
                             <div className="mt-3 text-xs font-medium leading-normal text-gray-500 dark:text-gray-400 text-center">
                                 <p className="mb-1">{t.header.copyright}</p>
