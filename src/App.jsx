@@ -9,22 +9,22 @@ import Projects from "@/Frontend/Pages/Projects";
 import ChatWidget from "@/Frontend/Components/ChatWidget";
 
 function App() {
-  return (
-    <LanguageProvider>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/index" element={<Index />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/chat" element={<Chat />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/achievements" element={<Achievements />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
-        <ChatWidget />
-      </Router>
-    </LanguageProvider>
-  );
+    return (
+        <LanguageProvider>
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Index />} />
+                    <Route path="/index" element={<Index />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/chat" element={<Chat />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/achievements" element={<Achievements />} />
+                    <Route path="/projects" element={<Projects />} />
+                </Routes>                
+                <ChatWidget />
+            </Router>
+        </LanguageProvider>
+    );
 }
 
 export default App;
