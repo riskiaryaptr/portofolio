@@ -23,6 +23,7 @@ function Achievements() {
     const [categorySearch, setCategorySearch] = useState("");
     const [achievementSearch, setAchievementSearch] = useState("");
     const [selectedAchievement, setSelectedAchievement] = useState(null);
+    const [hoveredImageId, setHoveredImageId] = useState(null);
 
     const certificateImages = {
         1: Cert1,
@@ -175,8 +176,15 @@ function Achievements() {
                                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                                         {filteredAchievements.map((achievement) => (
                                             <div key={achievement.id} onClick={() => handleOpenModal(achievement)} className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden cursor-pointer hover:shadow-sm transition-all duration-300">                                        
-                                                <div className="bg-white dark:bg-gray-800 overflow-hidden relative border-b border-gray-100 dark:border-gray-800 dark:opacity-93">
+                                                <div className="bg-white dark:bg-gray-800 overflow-hidden relative border-b border-gray-100 dark:border-gray-800 dark:opacity-93 flex items-center justify-center" onMouseEnter={() => setHoveredImageId(achievement.id)} onMouseLeave={() => setHoveredImageId(null)}>
                                                     <img src={achievement.image} alt={achievement.title} className="w-full h-auto"/>
+                                                    {hoveredImageId === achievement.id && (
+                                                        <div className="absolute inset-0 bg-black/5 flex items-center justify-center transition-all duration-300">
+                                                            <span className="bg-white/95 dark:bg-gray-900/95 text-gray-800 dark:text-gray-200 text-[11px] font-semibold px-2.5 py-1 rounded-lg backdrop-blur-xs tracking-wide">
+                                                                {language === "ID" ? "Lihat Detail" : "View Detail"}
+                                                            </span>
+                                                        </div>
+                                                    )}
                                                 </div>
 
                                                 <div className="p-4">

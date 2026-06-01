@@ -85,7 +85,7 @@ function Header() {
                 </nav>
             </header>
 
-            <nav id="desktop-sidebar" className="hidden lg:flex lg:flex-col lg:pt-12 lg:pr-8 lg:max-h-screen lg:overflow-y-auto">
+            <nav id="desktop-sidebar" className="hidden lg:flex lg:flex-col lg:pt-11 lg:pr-8 lg:max-h-screen lg:overflow-y-auto">
                 <div className="flex flex-col items-center text-center mb-5 border-b border-gray-300 dark:border-gray-800 pb-5">
                     <div className="h-24 w-24 rounded-full bg-gray-100 dark:bg-gray-800 overflow-hidden mb-3">
                         <img src={profilePic} alt="Avatar" className="w-full h-full object-cover" />
