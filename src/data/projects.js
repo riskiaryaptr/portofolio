@@ -9,6 +9,7 @@
  */
 import previewPortfolio from "@/assets/PreviewImage/portfolio.png";
 import previewPustivo from "@/assets/PreviewImage/pustivo.webp";
+import previewTanamjo from "@/assets/PreviewImage/tanamjo.webp";
 
 export const projects = [
     {
@@ -57,6 +58,60 @@ export const projects = [
                 {
                     US: "Recommendations get more relevant as more borrowing data is collected, because the rules are mined from real transactions in the library.",
                     ID: "Rekomendasi makin relevan seiring bertambahnya data peminjaman, karena aturan asosiasinya digali dari transaksi nyata di perpustakaan."
+                }
+            ]
+        }
+    },
+    {
+        slug: "tanamjo",
+        title: "Tanamjo",
+        category: "Web",
+        stack: ["Machine Learning", "Image Recognition", "Computer Vision"],
+        description: {
+            US: "AI-powered plant care platform that identifies plants, detects diseases early, and gives care recommendations backed by botanical expertise.",
+            ID: "Platform perawatan tanaman berbasis AI yang mengidentifikasi tanaman, mendeteksi penyakit sejak dini, dan memberi rekomendasi perawatan berdasarkan keahlian botani."
+        },
+        image: previewTanamjo,
+        liveLink: "https://tanamjo.devs.web.id",
+        githubLink: "",
+        featured: true,
+        details: {
+            paragraphs: [
+                {
+                    US: "Tanamjo combines artificial intelligence with botanical expertise to create a complete plant care ecosystem. The name comes from \"Tanaman\" (plant) and \"Jo\" (together), reflecting the goal of bringing people and plants closer through technology.",
+                    ID: "Tanamjo menggabungkan kecerdasan buatan dengan keahlian botani untuk menciptakan ekosistem perawatan tanaman yang lengkap. Namanya berasal dari \"Tanaman\" dan \"Jo\" (bersama), mencerminkan tujuan mendekatkan manusia dan tanaman melalui teknologi."
+                },
+                {
+                    US: "It started as a simple plant identification app and grew into a platform that helps users understand what their plants need, from growing media and watering schedules to handling pests and diseases.",
+                    ID: "Berawal dari aplikasi identifikasi tanaman sederhana, Tanamjo berkembang menjadi platform yang membantu pengguna memahami kebutuhan tanamannya, mulai dari media tanam dan jadwal penyiraman hingga penanganan hama dan penyakit."
+                },
+                {
+                    US: "Main features:",
+                    ID: "Fitur utama:"
+                }
+            ],
+            bullets: [
+                {
+                    US: "Plant identification from photos using image recognition",
+                    ID: "Identifikasi tanaman dari foto menggunakan image recognition"
+                },
+                {
+                    US: "Disease detection with symptoms, causes, and treatment options",
+                    ID: "Deteksi penyakit lengkap dengan gejala, penyebab, dan pilihan penanganan"
+                },
+                {
+                    US: "Plant care guides and an encyclopedia of plant species",
+                    ID: "Panduan perawatan dan ensiklopedia spesies tanaman"
+                },
+                {
+                    US: "Growth tracking and seasonal care tips",
+                    ID: "Pelacakan pertumbuhan dan tips perawatan musiman"
+                }
+            ],
+            closing: [
+                {
+                    US: "The model keeps improving through user interactions and expert feedback, making professional-grade plant diagnosis accessible to home gardeners, farmers, and plant enthusiasts.",
+                    ID: "Model terus berkembang melalui interaksi pengguna dan masukan ahli, sehingga diagnosis tanaman setara profesional bisa diakses oleh pekebun rumahan, petani, dan pecinta tanaman."
                 }
             ]
         }
@@ -111,23 +166,5 @@ export const projects = [
                 }
             ]
         }
-    },
-    {
-        slug: "clario-upscaler",
-        title: "Clario Upscaler AI Image",
-        category: "Web",
-        stack: ["React.js", "TensorFlow.js", "Tailwind CSS"],
-        description: {
-            US: "AI-powered image upscaling tool that enhances image quality up to 4x resolution using deep learning models.",
-            ID: "Alat peningkatan kualitas gambar berbasis AI yang dapat meningkatkan resolusi hingga 4x menggunakan model deep learning."
-        },
-        image: null,
-        liveLink: "https://upscaler-demo.com",
-        githubLink: "https://github.com/riskiaryaptr/clario-upscale",
-        date: {
-            US: "Dec 2025",
-            ID: "Des 2025"
-        },
-        featured: true
     }
 ];
