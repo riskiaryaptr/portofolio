@@ -5,6 +5,7 @@
  * Text that is the same in both languages is written once.
  */
 import logoUms from "@/assets/Logo/universitas-muhammadiyah-semarang.webp";
+import logoSma3Demak from "@/assets/Logo/sma-negeri-3-demak.webp";
 
 export const education = [
     {
@@ -51,7 +52,7 @@ export const education = [
             US: "Science Major",
             ID: "MIPA (Matematika dan Ilmu Pengetahuan Alam)"
         },
-        logo: null,
+        logo: logoSma3Demak,
         location: {
             US: "Demak, Central Java, Indonesia 🇮🇩",
             ID: "Demak, Jawa Tengah, Indonesia 🇮🇩"
