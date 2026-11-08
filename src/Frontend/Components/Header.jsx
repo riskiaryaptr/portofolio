@@ -156,16 +156,9 @@ function Header() {
                             </ul>
 
                             {/* Preferences */}
-                            <p className="mt-6 px-2 pb-2 text-[11px] font-bold uppercase tracking-widest text-gray-400 dark:text-gray-500">{t.nav.preferences}</p>
-                            <div className="mx-1 space-y-3 rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-50/70 dark:bg-gray-900/60 p-3">
-                                <div className="flex items-center gap-3">
-                                    <span className="w-16 shrink-0 text-[13px] font-semibold text-gray-600 dark:text-gray-400">{t.nav.language}</span>
-                                    <LanguageToggle size="lg" />
-                                </div>
-                                <div className="flex items-center gap-3">
-                                    <span className="w-16 shrink-0 text-[13px] font-semibold text-gray-600 dark:text-gray-400">{t.nav.theme}</span>
-                                    <ThemeToggle size="lg" showLabels />
-                                </div>
+                            <div className="mt-5 mx-1 flex items-center gap-2 border-t border-gray-100 dark:border-gray-800 pt-4">
+                                <LanguageToggle />
+                                <ThemeToggle />
                             </div>
                         </div>
 
