@@ -8,8 +8,59 @@
  * Text that is the same in both languages is written once.
  */
 import previewPortfolio from "@/assets/PreviewImage/portfolio.png";
+import previewPustivo from "@/assets/PreviewImage/pustivo.webp";
 
 export const projects = [
+    {
+        slug: "pustivo",
+        title: "Pustivo",
+        category: "Web",
+        stack: ["Laravel", "Tailwind CSS", "MySQL", "Apriori Algorithm"],
+        description: {
+            US: "Digital library website and app that recommends books to borrow using the Apriori algorithm, based on titles other members often borrow together.",
+            ID: "Website dan aplikasi perpustakaan digital yang merekomendasikan buku untuk dipinjam dengan algoritma Apriori, berdasarkan judul yang sering dipinjam bersamaan oleh peminjam lain."
+        },
+        image: previewPustivo,
+        liveLink: "https://pustivo.devs.web.id",
+        githubLink: "",
+        featured: true,
+        details: {
+            paragraphs: [
+                {
+                    US: "Pustivo helps library members find their next read. Instead of browsing the catalog blindly, the system looks at the library's borrowing history and finds books that are frequently borrowed together.",
+                    ID: "Pustivo membantu anggota perpustakaan menemukan bacaan berikutnya. Alih-alih menelusuri katalog tanpa arah, sistem melihat riwayat peminjaman perpustakaan dan mencari buku-buku yang sering dipinjam bersamaan."
+                },
+                {
+                    US: "Main features:",
+                    ID: "Fitur utama:"
+                }
+            ],
+            bullets: [
+                {
+                    US: "Book recommendations generated with the Apriori association-rule algorithm",
+                    ID: "Rekomendasi buku yang dihasilkan dengan algoritma association rule Apriori"
+                },
+                {
+                    US: "Searchable book catalog",
+                    ID: "Katalog buku yang bisa dicari"
+                },
+                {
+                    US: "Member login with personal borrowing history",
+                    ID: "Login anggota dengan riwayat peminjaman pribadi"
+                },
+                {
+                    US: "Responsive layout with light and dark mode",
+                    ID: "Tampilan responsif dengan mode terang dan gelap"
+                }
+            ],
+            closing: [
+                {
+                    US: "Recommendations get more relevant as more borrowing data is collected, because the rules are mined from real transactions in the library.",
+                    ID: "Rekomendasi makin relevan seiring bertambahnya data peminjaman, karena aturan asosiasinya digali dari transaksi nyata di perpustakaan."
+                }
+            ]
+        }
+    },
     {
         slug: "portfolio",
         title: "riskiaryaputra.devs.web.id",

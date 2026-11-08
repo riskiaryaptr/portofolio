@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import Layout from "@/Frontend/Components/Layout";
 import ProjectPreview from "@/Frontend/Components/ProjectPreview";
 import ProjectImage from "@/Frontend/Components/ProjectImage";
-import { FaceFrownIcon } from "@heroicons/react/24/outline";
+import { FaceFrownIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 import { StarIcon } from "@heroicons/react/24/solid";
-import { SiGithub } from "react-icons/si";
 import { useContent } from "@/data";
 
 function Projects() {
@@ -32,37 +31,37 @@ function Projects() {
                         {projects.length > 0 ? (
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                                 {projects.map((project) => (
-                                    <article key={project.slug} className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden hover:shadow-md transition-all duration-300 flex flex-col h-full relative">
-                                        <button type="button" onClick={() => openProject(project.slug)} aria-label={project.title} className="bg-gray-50 mb-1 dark:bg-gray-800 overflow-hidden relative border-b border-gray-100 dark:border-gray-800 shrink-0 block text-left">
+                                    <button key={project.slug} type="button" onClick={() => openProject(project.slug)}
+                                        className="group text-left bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden flex flex-col h-full relative transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md hover:border-blue-200 dark:hover:border-gray-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+                                        <div className="bg-gray-50 dark:bg-gray-800 overflow-hidden relative border-b border-gray-100 dark:border-gray-800 w-full aspect-[16/9]">
                                             {project.featured && (
                                                 <div className="absolute top-0 right-0 z-10 flex items-center gap-1.5 px-3 py-1.5 bg-blue-500 text-white rounded-bl-xl">
                                                     <StarIcon className="w-3.5 h-3.5 text-white" aria-hidden="true" />
                                                     <span className="text-[12px] font-semibold leading-normal tracking-wide">{t.projects.featuredLabel}</span>
                                                 </div>
                                             )}
-                                            <ProjectImage project={project} className="h-auto" />
-                                        </button>
+                                            <ProjectImage project={project} fit="object-cover object-top" className="transition-transform duration-500 group-hover:scale-[1.03]" />
+                                        </div>
 
-                                        <div className="p-3 flex-1 flex flex-col">
+                                        <div className="p-4 flex-1 flex flex-col">
                                             <h2 className="mb-2 text-[15.4px] font-semibold text-gray-700 dark:text-gray-200 leading-[22px] tracking-wide line-clamp-1">{project.title}</h2>
+                                            <p className="text-[12.5px] font-normal text-gray-500 dark:text-gray-400 leading-relaxed tracking-wide line-clamp-2">{project.description}</p>
 
-                                            <p className="text-[12.5px] font-normal text-gray-500 dark:text-gray-400 leading-relaxed tracking-wide mb-5 line-clamp-2">{project.description}</p>
-
-                                            <div className="mt-auto pt-4 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between gap-2">
-                                                <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="flex-1 inline-flex items-center justify-center gap-2 px-3 py-1.5 text-[12px] font-semibold leading-normal tracking-wide text-gray-600 dark:text-gray-400 bg-gray-50/50 dark:bg-gray-800/50 rounded-lg transition-all border border-gray-100 dark:border-gray-700">
-                                                    <SiGithub className="w-3.5 h-3.5" aria-hidden="true" />
-                                                    <span>{t.projects.sourceCodeLabel}</span>
-                                                </a>
-
-                                                <button type="button" onClick={() => openProject(project.slug)} className="flex-1 inline-flex items-center justify-center gap-2 px-3 py-1.5 text-[12px] font-semibold leading-normal tracking-wide text-white bg-blue-500 dark:bg-gray-800 dark:text-gray-100 dark:border dark:border-gray-700 rounded-lg transition-all shadow-sm">
-                                                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                                    </svg>
-                                                    <span>{t.projects.liveDemoLabel}</span>
-                                                </button>
+                                            <div className="mt-auto pt-4 flex items-center justify-between gap-3">
+                                                <ul className="flex flex-nowrap items-center gap-1.5 min-w-0 overflow-hidden">
+                                                    {project.stack.slice(0, 2).map((tech) => (
+                                                        <li key={tech} className="shrink-0 whitespace-nowrap rounded-md border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 px-2 py-1 text-[11px] font-semibold leading-none text-gray-600 dark:text-gray-400">{tech}</li>
+                                                    ))}
+                                                    {project.stack.length > 2 && (
+                                                        <li title={project.stack.slice(2).join(", ")} className="shrink-0 whitespace-nowrap rounded-md border border-gray-200 dark:border-gray-700 px-1.5 py-1 text-[11px] font-semibold leading-none text-gray-400 dark:text-gray-500">+{project.stack.length - 2}</li>
+                                                    )}
+                                                </ul>
+                                                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 transition-colors group-hover:bg-blue-500 group-hover:text-white dark:group-hover:bg-gray-700" aria-hidden="true">
+                                                    <ArrowRightIcon className="h-4 w-4" />
+                                                </span>
                                             </div>
                                         </div>
-                                    </article>
+                                    </button>
                                 ))}
                             </div>
                         ) : (

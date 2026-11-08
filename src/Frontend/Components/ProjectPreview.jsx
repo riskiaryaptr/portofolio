@@ -29,17 +29,21 @@ function ProjectPreview({ project, onBack }) {
                     </div>
 
                     <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
+                        {project.githubLink && (
                         <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-4 py-2 text-[13px] font-semibold text-gray-700 dark:text-gray-300 rounded-lg border border-gray-200 dark:border-gray-700 transition-colors flex-1 sm:flex-initial">
                             <SiGithub className="w-4 h-4" aria-hidden="true" />
                             <span>{t.projects.sourceCodeLabel}</span>
                         </a>
+                        )}
 
+                        {project.liveLink && (
                         <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-4 py-2 text-[13px] font-semibold text-gray-700 dark:text-gray-300 rounded-lg border border-gray-200 dark:border-gray-700 transition-colors flex-1 sm:flex-initial">
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                             </svg>
                             <span>{t.projects.liveDemoLabel}</span>
                         </a>
+                        )}
                     </div>
                 </div>
 
