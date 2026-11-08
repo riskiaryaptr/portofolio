@@ -111,7 +111,7 @@ function Header() {
                         className={`absolute inset-0 bg-gray-900/40 backdrop-blur-sm transition-opacity duration-300 ${menuVisible ? "opacity-100" : "opacity-0"}`} />
 
                     <div style={{ transitionDuration: `${DRAWER_MS}ms` }}
-                        className={`absolute inset-y-0 right-0 flex w-[86%] max-w-sm flex-col bg-white dark:bg-gray-950 shadow-2xl rounded-l-3xl transition-transform ease-[cubic-bezier(0.32,0.72,0,1)] ${menuVisible ? "translate-x-0" : "translate-x-full"}`}>
+                        className={`absolute inset-y-0 right-0 flex w-[86%] max-w-sm flex-col bg-white dark:bg-gray-950 shadow-2xl transition-transform ease-[cubic-bezier(0.32,0.72,0,1)] ${menuVisible ? "translate-x-0" : "translate-x-full"}`}>
 
                         {/* Profile */}
                         <div className="flex items-start justify-between gap-3 px-5 pt-6 pb-5">
