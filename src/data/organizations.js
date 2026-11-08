@@ -4,7 +4,7 @@
  * Text that differs per language is written as { US: "...", ID: "..." }.
  * Text that is the same in both languages is written once.
  */
-import logoUms from "@/assets/Logo/universitas-muhammadiyah-semarang.webp";
+import logoHimafor from "@/assets/Logo/himafor-unimus.webp";
 
 export const organizations = [
     {
@@ -38,6 +38,6 @@ export const organizations = [
                 "Berkolaborasi dengan sesama anggota dalam program mahasiswa tingkat jurusan"
             ]
         },
-        logo: logoUms
+        logo: logoHimafor
     }
 ];
