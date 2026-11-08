@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "portofolio",
+	"account_id": "919cbb126f7461b44695930aafa604f7",
+  "compatibility_date": "2026-11-01",
+  // devs.web.id zone lives in another Cloudflare account, so a custom domain
+  // can't be attached from this account. Serve on workers.dev for now.
+  "workers_dev": true,
+  // Static site: Vite build output served by Workers Static Assets.
+  "assets": {
+    "directory": "./dist",
+    // SPA fallback so react-router (BrowserRouter) routes like /about work on refresh.
+    "not_found_handling": "single-page-application"
+  }
+}

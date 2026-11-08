@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- seo:start (generated from src/data/site.js by vite.config.js) -->
+        <!-- seo:end -->
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="color-scheme" content="light dark" />
+        <link rel="icon" type="image/webp" href="/favicon.webp" />
+        <link rel="apple-touch-icon" href="/favicon.webp" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400..800&family=Dancing+Script:wght@700&display=swap" />
+
+        <!-- Apply saved theme before first paint to avoid a light/dark flash. -->
+        <script>
+            try {
+                if (localStorage.getItem("theme") === "dark") {
+                    document.documentElement.classList.add("dark");
+                    document.querySelector('meta[name="theme-color"]').setAttribute("content", "#030712");
+                }
+                if (localStorage.getItem("language") === "ID") document.documentElement.lang = "id";
+            } catch (e) {}
+        </script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <noscript>
+            <p style="font-family: sans-serif; padding: 24px">Riski Arya Putra — Frontend Developer. Email: riskiary1402@gmail.com</p>
+        </noscript>
+        <script type="module" src="/src/main.jsx"></script>
+    </body>
+</html>
